@@ -18,7 +18,8 @@ class Page1 extends StatelessWidget {
               child: Text('Page1'),
               color: Colors.yellow,
             ),
-            Text(Provider.of<ProviderDemo>(context).test1)
+            Text(Provider.of<ProviderDemo>(context).test1),
+            FlatButton(onPressed: (){Provider.of<ProviderDemo>(context,listen: false).changeValue('heloo');}, child: Text('Click'))
           ],
         ),
       ),
